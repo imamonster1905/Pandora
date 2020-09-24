@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#927767</color>
+    <color name="colorPrimaryVariant">#C19E89</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#3CC75C</color>
+    <color name="colorSecondaryVariant">#44DF68</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorError">#E24848</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorSurface">#EEE6E2</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorBackground">#F3F3F3</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+
+    //other color
+    <color name="colorTextButton">#927767</color>
+    <color name="colorPrimaryText">#927767</color>
+    <color name="colorDarkGrayText">#616161</color>
+
+
+    <color name="colorTextButtonOutlineSelected">#FFFFFF</color>
+    <color name="colorTextButtonOutlineUnselected">#000000</color>
+
+    <color name="colorCustomTabSelected">#5E4637</color>
+    <color name="colorCustomTabUnselected">#8A6F60</color>
+
+    <color name="colorSurfaceLight">#F6F6F6</color>
+
+    <!--splash background color-->
+    <color name="colorBackgroundSplash">#FFFFFF</color>
+
+    //web color
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="dark_gray">#616161</color>
+    <color name="another_gray">#E5E5E5</color>
+    <color name="another_gray2">#F1F1F1</color>
+    <color name="gray">#808080</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_variant">#0D9CD2</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="colorCheckbox">#A7A7A7</color>
+</resources>

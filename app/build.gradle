@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.esmac.android.pandora"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'dicar_key_alias'
+            keyPassword '123456'
+            storeFile rootProject.file('keystore/dicar.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField("String", "app_name", "\"DiCar Dev\"")
+            buildConfigField("String", "BASE_URL", "\"http://spa.hoanvusolutions.com.vn/api/v1/\"")
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", "\"http://spa.hoanvusolutions.com.vn/api/v1/\"")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //dagger
+    def dagger2Version = '2.25.2'
+    implementation "com.google.dagger:dagger:$dagger2Version" // dagger required library
+    implementation "com.google.dagger:dagger-android-support:$dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger2Version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2Version" // dagger required library
+    kapt "com.google.dagger:dagger-android-processor:$dagger2Version"
+
+    // reactive
+    def rxjava2Version = '2.1.9'
+    def rxandroidVersion = '2.0.2'
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2Version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroidVersion"
+
+    // retrofit
+    def retrofitVersion = "2.3.0"
+    def rxJavaAdapterVersion = '2.7.2'
+    def okhttpLoggingInterceptorVersion = "3.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxJavaAdapterVersion"
+    implementation "com.squareup.retrofit2:retrofit-mock:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpLoggingInterceptorVersion"
+
+    //fcm
+    def firebaseVersion = '17.5.0'
+    def firebaseMsgVersion = '20.1.0'
+    def workVersion = '1.0.1'
+    implementation "com.google.firebase:firebase-analytics:$firebaseVersion"
+    implementation "com.google.firebase:firebase-core:$firebaseVersion"
+    implementation "com.google.firebase:firebase-messaging:$firebaseMsgVersion"
+    implementation "android.arch.work:work-runtime:$workVersion"
+
+    //glide
+    def glideVersion = '4.9.0'
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //image view
+    def circleImageView = '3.1.0'
+    def roundedImageView = '2.3.0'
+    def autoImageSlider = '1.3.9'
+    implementation "de.hdodenhof:circleimageview:$circleImageView" //circle ImageView
+    implementation "com.makeramen:roundedimageview:$roundedImageView" //rounded ImageView
+    implementation "com.github.smarteist:autoimageslider:$autoImageSlider" //slide
+
+    //image picker
+    def imagePicker = '1.7.5'
+    implementation "com.github.dhaval2404:imagepicker:$imagePicker"
+
+    //permission
+    def dexterVersion = '6.0.0'
+    implementation "com.karumi:dexter:$dexterVersion"
+}

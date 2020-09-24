@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Pandora</string>
+
+    //common
+<!--    <string name="facebook_app_id">612329262732694</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb612329262732694</string>-->
+<!--    <string name="server_client_id">1060280696833-kttb76k4hekffcem85fr9jqpcmuhok6r.apps.googleusercontent.com</string>-->
+<!--    <string name="server_client_secret">0CG2XIddw0PdOnVwKr1NGry5</string>-->
+<!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
+<!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
+<!--    <string name="nav_header_title">Android Studio</string>-->
+<!--    <string name="nav_header_subtitle">android.studio@android.com</string>-->
+<!--    <string name="nav_header_desc">Navigation header</string>-->
+    <string name="default_notification_channel_id">dicar_channel</string>
+    <string name="error_open_website">Đã xảy ra lỗi khi mở website. Vui lòng thử lại sau.</string>
+
+    //app theme
+    <string name="system_default">System defaukt</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txt_login">Đăng nhập</string>
+    <string name="txt_ok">OK</string>
+</resources>

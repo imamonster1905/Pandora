@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //validate message
+    <string name="validate_message_phone_length">Số điện thoại không hợp lệ \nĐộ dài trong khoảng 9 – 12 số</string>
+    <string name="validate_message_phone_empty">Số điện thoại không được trống</string>
+    <string name="validate_message_password_empty">Mật khẩu không được trống</string>
+    <string name="validate_message_password_length">Mật khẩu không hợp lệ \nĐộ dài trong khoảng 6 – 32 ký tự</string>
+    <string name="validate_message_password_retype_unmatch">Mật khẩu xác nhận chưa đúng</string>
+
+
+    <string name="message_successful">Thành công</string>
+    <string name="message_expire_token">Phiên làm việc của bạn đã hết hạn.\nVui lòng đăng nhập lại!</string>
+    <string name="message_scan_success">\nTổng điểm tích lũy của bạn là: %d</string>
+    <string name="message_unknonw_erorr">Oops! Chúng tôi không thể xử lý yêu cầu của bạn ngay lúc này!\n\nVui lòng thử sau ít phút nhé ^^</string>
+    <string name="message_network_not_available">Kết nối mạng của bạn hiện không khả dụng!</string>
+
+<!--    mr BackendDev will not happy :))-->
+<!--    <string name="message_internal_server_erorr">Lỗi máy chủ nội bộ!</string>-->
+    <string name="message_internal_server_erorr">@string/message_unknonw_erorr</string>
+
+    <string name="message_socket_timeout_erorr">Hết thời gian truy cập!</string>
+    <string name="message_invalid_argument">Dữ liệu không hợp lệ</string>
+    <string name="message_invalid_otp">Mã xác nhận không hợp lệ!</string>
+    <string name="message_invalid_phone">Số điện thoại không hợp lệ!</string>
+    <string name="message_system_resend_code">Hệ thống đã gửi lại mã cho bạn!</string>
+    <string name="message_location_permission_request">Ứng dụng cần quyền Vị trí để tìm Đại lý gần bạn.</string>
+    <string name="message_permission_denied">Chức năng sẽ không hoạt động khi ứng dụng chưa được cấp quyền cần thiết!</string>
+    <string name="message_camera_permission_denied">Chức năng sẽ không hoạt động khi ứng dụng chưa được cấp quyền truy cập máy ảnh!</string>
+    <string name="message_camera_permission_error">Một lỗi đã xãy ra trong quá trình cấp quyền truy cập máy ảnh của ứng dụng!</string>
+    <string name="message_exchange_this_gift">Bạn có chắc đổi món quà này không?</string>
+    <string name="message_survey_hint">Khảo sát cải thiện hệ thống</string>
+    <string name="message_survey_success">Cảm ơn bạn đã dành thời gian để khảo sát hệ thống!</string>
+
+    <string name="message_read_policy">Tôi đã đọc và đồng ý với những điều khoản trên</string>
+    <string name="message_press_again_to_exit">Nhấn lần nữa để thoát</string>
+
+    <string name="message_exchange_success">Cảm ơn bạn đã đổi quà. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</string>
+
+</resources>
